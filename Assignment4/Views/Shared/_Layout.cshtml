@@ -1,0 +1,50 @@
+﻿
+<!--this shared layout page will show stuff on every html page-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Top restaurants</title>
+    <meta name="viewport" content="width=device-width"
+
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="NewRestaurant">Submit Suggestion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="RestaurantList">Suggested</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+
+</head>
+
+<body>
+    <h1 class="text-center">@ViewBag.Title</h1>
+    @RenderBody()
+    <nav class="navbar navbar-expand-sm bg-light fixed-bottom">
+    <p class="navbar-class" href="#">Caroline Crane -- Assignment 4 -- Section 2 -- 2021</p>
+    </nav>
+
+</body>
+</html>
+ 
